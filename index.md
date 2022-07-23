@@ -52,8 +52,8 @@ CustomCaptcha.init({
 });
 ```
 ![](/assets/config_example_global.png)
-### Placeholder:
-## Until you initialize the widget you can show a placeholder text
+## Placeholder:
+### Until you initialize the widget you can show a placeholder text
 ```htmml
 <captcha required>Please wait while the Captcha is loading...</captcha>
 ```
