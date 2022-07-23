@@ -1,0 +1,4 @@
+theme: jekyll-theme-architect
+title: Custom Captcha
+description: Extending Google reCaptcha v3 with a custom checkbox creating a custom and unique one.
+show_downloads: false
