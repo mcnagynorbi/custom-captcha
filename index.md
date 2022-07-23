@@ -13,6 +13,10 @@ You can make your own branded reCaptcha to make a unique experience.
 
 ### This captcha is using reCaptcha v3 which is based on scoring instead of a real challenge.
 
+## Demo:
+
+<captcha text="Custom" label="I think I'm not a robot" logo="https://twemoji.maxcdn.com/v/13.1.0/svg/1f916.svg" theme="light" required></captcha>
+
 ## Usage:
 
 ### Add this to the \<head>:
