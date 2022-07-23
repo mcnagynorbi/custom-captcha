@@ -7,7 +7,7 @@ You can make your own branded reCaptcha to make a unique experience.
 ## **⚠️ Warning**
 ### This captcha is using reCaptcha v3 which is based on scoring instead of a real challenge.
 ## Usage:
-### Add this to the head:
+### Add this to the \<head>:
 ```html
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/mcnagynorbi/custom-captcha/dist/custom_captcha.min.css"></link>
 <script src="https://cdn.jsdelivr.net/gh/mcnagynorbi/custom-captcha/dist/custom_captcha.min.js"></script>
@@ -21,14 +21,15 @@ You can make your own branded reCaptcha to make a unique experience.
 CustomCaptcha.init("<your reCaptcha v3 siteKey>");
 ```
 ### Configuration:
-| parameter    |              description               |   values    |       default        |
-|--------------|----------------------------------------|-------------|----------------------|
-| name         | the name used in the form              |             | g-recaptcha-response |
-| text         | the text displayed in the bottom right |             | reCAPTCHA            |
-| lang         | language of the "I'm not a robot"      | en, hu      | browser default      |
-| theme        | the color scheme of the widget         | light, dark | light                |
-| required     | makes the field required (recommended) |             |                      |
-| logo-rounded | makes the logo rounded                 |             |                      |
+| parameter    |              description                 |   values    |       default        |
+|--------------|------------------------------------------|-------------|----------------------|
+| name         | the name used in the form                | \<string>    | g-recaptcha-response |
+| text         | the text displayed in the bottom right   | \<string>    | reCAPTCHA            |
+| lang         | language of the "I'm not a robot"        | en, hu      | browser default      |
+| label        | Custom text instead of "I'm not a robot" | \<string>    | "I'm not a robot"    |
+| theme        | the color scheme of the widget           | light, dark | light                |
+| required     | makes the field required (recommended)   |             |                      |
+| logo-rounded | makes the logo rounded                   |             |                      |
 ### Configuration on the element:
 ```html
 <captcha required></captcha>
@@ -51,7 +52,11 @@ CustomCaptcha.init({
 });
 ```
 ![](/assets/config_example_global.png)
-
+### Placeholder:
+## Until you initialize the widget you can show a placeholder text
+```htmml
+<captcha required>Please wait while the Captcha is loading...</captcha>
+```
 
 ## How to get siteKey?
 
