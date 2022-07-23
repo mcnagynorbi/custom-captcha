@@ -50,3 +50,15 @@ CustomCaptcha.init({
 });
 ```
 ![](/assets/config_example_global.png)
+
+
+## How to get siteKey?
+
+- Go to the [Google reCaptcha admin](https://www.google.com/recaptcha/admin/create) page
+- Choose **reCaptcha v3**
+- Add your domain(s) under **Domains**
+- Click on **Submit**
+- Copy the **site key** and use it in **init**
+
+## **⚠️ Please note**
+### You need to process captcha score in your backend
