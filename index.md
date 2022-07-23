@@ -21,13 +21,14 @@ You can make your own branded reCaptcha to make a unique experience.
 CustomCaptcha.init("<your reCaptcha v3 siteKey>");
 ```
 ### Configuration:
-| parameter |              description               |   values    |       default        |
-|-----------|----------------------------------------|-------------|----------------------|
-| name      | the name used in the form              |             | g-recaptcha-response |
-| text      | the text displayed in the bottom right |             | reCAPTCHA            |
-| lang      | language of the "I'm not a robot"      | en, hu      | browser default      |
-| theme     | the color scheme of the widget         | light, dark | light                |
-| required  | makes the field required (recommended) |             |                      |
+| parameter    |              description               |   values    |       default        |
+|--------------|----------------------------------------|-------------|----------------------|
+| name         | the name used in the form              |             | g-recaptcha-response |
+| text         | the text displayed in the bottom right |             | reCAPTCHA            |
+| lang         | language of the "I'm not a robot"      | en, hu      | browser default      |
+| theme        | the color scheme of the widget         | light, dark | light                |
+| required     | makes the field required (recommended) |             |                      |
+| logo-rounded | makes the logo rounded                 |             |                      |
 ### Configuration on the element:
 ```html
 <captcha required></captcha>
