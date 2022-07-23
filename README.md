@@ -9,8 +9,8 @@ You can make your own branded reCaptcha to make a unique experience.
 ## Usage:
 ### Add this to the head:
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/mcnagynorbi/custom-captcha@1.0/dist/custom_captcha.min.css"></link>
-<script src="https://cdn.jsdelivr.net/gh/mcnagynorbi/custom-captcha@1.0/dist/custom_captcha.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/mcnagynorbi/custom-captcha/dist/custom_captcha.min.css"></link>
+<script src="https://cdn.jsdelivr.net/gh/mcnagynorbi/custom-captcha/dist/custom_captcha.min.js"></script>
 ```
 ### Add this to your form(s):
 ```html
