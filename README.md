@@ -68,6 +68,7 @@ CustomCaptcha.init({
 <captcha theme="dark" required></captcha>
 <captcha text="Example" required></captcha>
 <captcha text="Example" theme="dark" required></captcha>
+<captcha label="Click here for a delicious 🍔" logo="https://twemoji.maxcdn.com/v/14.0.2/72x72/303d.png" text="I'm eatin' it" required></captcha>
 ```
 
 ![](/assets/config_example_inline.png)
