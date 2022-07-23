@@ -21,6 +21,7 @@ You can make your own branded reCaptcha to make a unique experience.
 CustomCaptcha.init("<your reCaptcha v3 siteKey>");
 ```
 ### Configuration:
+
 | parameter    |              description                 |   values                   |       default        |
 |--------------|------------------------------------------|----------------------------|----------------------|
 | name         | the name used in the form                | \<string>                  | g-recaptcha-response |
