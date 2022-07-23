@@ -1,3 +1,6 @@
+<link rel="stylesheet" href="/dist/custom_captcha.min.css"></link>
+<script src="/dist/custom_captcha.min.js"></script>
+
 # Custom Captcha
 
 Extending Google reCaptcha v3 with a custom checkbox.
@@ -59,7 +62,8 @@ CustomCaptcha.init({
 });
 ```
 
-![](/assets/config_example_global.png)
+<captcha required></captcha>
+<captcha theme="light" required></captcha>
 
 ### Configuration on the element:
 
@@ -71,8 +75,11 @@ CustomCaptcha.init({
 <captcha label="Click here for a delicious 🍔" logo="https://twemoji.maxcdn.com/v/14.0.2/72x72/303d.png" text="I'm eatin' it" required></captcha>
 ```
 
-![](/assets/config_example_inline.png)
-
+<captcha required></captcha>
+<captcha theme="dark" required></captcha>
+<captcha text="Example" required></captcha>
+<captcha text="Example" theme="dark" required></captcha>
+<captcha label="Click here for a delicious 🍔" logo="https://twemoji.maxcdn.com/v/14.0.2/72x72/303d.png" text="I'm eatin' it" required></captcha>
 ## Placeholder:
 
 ### Until you initialize the widget you can show a placeholder text
