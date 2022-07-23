@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="/dist/custom_captcha.min.css"></link>
+<link rel="stylesheet" href="/dist/custom_captcha.min.css" />
 <script src="/dist/custom_captcha.min.js"></script>
 
 # Custom Captcha
@@ -62,8 +62,8 @@ CustomCaptcha.init({
 });
 ```
 
-<captcha required></captcha>
-<captcha theme="light" required></captcha>
+<captcha text="Example" logo="https://twemoji.maxcdn.com/v/13.1.0/svg/1f916.svg" theme="dark" required></captcha>
+<captcha text="Example" logo="https://twemoji.maxcdn.com/v/13.1.0/svg/1f916.svg" theme="light" required></captcha>
 
 ### Configuration on the element:
 
@@ -99,3 +99,7 @@ CustomCaptcha.init({
 ## **⚠️ Please note**
 
 ### You need to process captcha score in your backend
+
+<script>
+    CustomCaptcha.init("6LdYwRUhAAAAAOPnPnui3qMlO3EGcBLsGduU6W55");
+</script>
