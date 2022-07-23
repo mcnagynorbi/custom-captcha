@@ -11,7 +11,7 @@ You can make your own branded reCaptcha to make a unique experience.
 
 ## **⚠️ Warning**
 
-### This captcha is using reCaptcha v3 which is based on scoring instead of a real challenge.
+### This captcha is using reCaptcha v3 which is based on scoring instead of a visual challenge.
 
 ## Demo:
 
