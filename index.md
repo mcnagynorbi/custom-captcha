@@ -21,15 +21,15 @@ You can make your own branded reCaptcha to make a unique experience.
 CustomCaptcha.init("<your reCaptcha v3 siteKey>");
 ```
 ### Configuration:
-| parameter    |              description                 |   values    |       default        |
-|--------------|------------------------------------------|-------------|----------------------|
-| name         | the name used in the form                | \<string>    | g-recaptcha-response |
-| text         | the text displayed in the bottom right   | \<string>    | reCAPTCHA            |
-| lang         | language of the "I'm not a robot"        | en, hu      | browser default      |
-| label        | Custom text instead of "I'm not a robot" | \<string>    | "I'm not a robot"    |
-| theme        | the color scheme of the widget           | light, dark | light                |
-| required     | makes the field required (recommended)   |             |                      |
-| logo-rounded | makes the logo rounded                   |             |                      |
+| parameter    |              description                 |   values                   |       default        |
+|--------------|------------------------------------------|----------------------------|----------------------|
+| name         | the name used in the form                | \<string>                  | g-recaptcha-response |
+| text         | the text displayed in the bottom right   | \<string>                  | reCAPTCHA            |
+| lang         | language of the "I'm not a robot"        | en, hu, de, sk, ro, hr, fr | browser default      |
+| label        | Custom text instead of "I'm not a robot" | \<string>                  | "I'm not a robot"    |
+| theme        | the color scheme of the widget           | light, dark | light        |
+| required     | makes the field required (recommended)   |                            |                      |
+| logo-rounded | makes the logo rounded                   |                            |                      |
 ### Configuration on the element:
 ```html
 <captcha required></captcha>
