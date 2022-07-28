@@ -103,6 +103,20 @@ CustomCaptcha.init({
 ## **⚠️ Please note**
 
 ### You need to process captcha score in your backend
+### Example code for validating response:
+
+```php
+function validate_captcha_response($code){
+    if($_SERVER['HTTP_HOST']=="localhost") return true;
+    if(!$code || strlen($code)<32){
+        $secret = "<your reCaptcha v3 secret>";
+        $ip = $_SERVER['REMOTE_ADDR'];
+        $gcaptcha = json_decode(file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=$secret&response=$code&remoteip=$ip"), true);
+        return ($gcaptcha['success'] == true && $gcaptcha['score'] >= 0.8 && $gcaptcha['hostname'] == $_SERVER['SERVER_NAME']);
+    }
+    return false;
+}
+```
 
 <script>
     CustomCaptcha.init("6LdYwRUhAAAAAOPnPnui3qMlO3EGcBLsGduU6W55");
