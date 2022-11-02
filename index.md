@@ -22,8 +22,8 @@ You can make your own branded reCaptcha to make a unique experience.
 ### Add this to the \<head>:
 
 ```html
-<link rel="stylesheet" href="https://custom-captcha.js.org/dist/custom_captcha.min.css"></link>
-<script src="https://custom-captcha.js.org/dist/custom_captcha.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/custom-recaptcha/dist/custom_captcha.min.css"></link>
+<script src="https://cdn.jsdelivr.net/npm/custom-recaptcha/dist/custom_captcha.min.js"></script>
 ```
 
 ### Add this to your form(s):
