@@ -15,7 +15,7 @@ You can make your own branded reCaptcha to make a unique experience.
 
 ## Demo:
 
-<captcha text="Custom" label="I think I'm not a robot" logo="https://twemoji.maxcdn.com/v/13.1.0/svg/1f916.svg" theme="light" required></captcha>
+<captcha text="Custom" label="I think I'm not a robot" logo="https://cdn.jsdelivr.net/gh/twitter/twemoji/assets/svg/1f916.svg" theme="light" required></captcha>
 
 ## Usage:
 
@@ -40,15 +40,18 @@ CustomCaptcha.init("<your reCaptcha v3 siteKey>");
 
 ### Configuration:
 
-| parameter    |              description                 |   values                   |       default        
-|--------------|------------------------------------------|----------------------------|----------------------
-| name         | the name used in the form                | \<string>                  | g-recaptcha-response 
-| text         | the text displayed in the bottom right   | \<string>                  | reCAPTCHA            
-| lang         | language of the "I'm not a robot"        | en, hu, de, sk, ro, hr, fr | browser default      
-| label        | Custom text instead of "I'm not a robot" | \<string>                  | "I'm not a robot"    
-| theme        | the color scheme of the widget           | light, dark | light        |                      
-| required     | makes the field required (recommended)   |                            |                      
-| logo-rounded | makes the logo rounded                   |                            |                      
+| parameter    | description                              | values                     | default              |
+| ------------ | ---------------------------------------- | -------------------------- | -------------------- |
+| logo         | the captcha brand logo                   | \<url>                     | favicon\*             |
+| name         | the name used in the form                | \<string>                  | g-recaptcha-response |
+| text         | the text displayed in the bottom right   | \<string>                  | reCAPTCHA            |
+| lang         | language of the "I'm not a robot"        | en, hu, de, sk, ro, hr, fr | browser default      |
+| label        | Custom text instead of "I'm not a robot" | \<string>                  | "I'm not a robot"    |
+| theme        | the color scheme of the widget           | light, dark                | light                |
+| required     | makes the field required (recommended)   |                            | not set              |
+| logo-rounded | makes the logo rounded                   |                            | not set              |
+
+\* By default the brand logo is the website favicon. If the website has no favicon or it is not available for some reason then it will fall back to the reCAPTCHA logo.
 
 ### Default configuration on initialization:
 
@@ -76,14 +79,14 @@ CustomCaptcha.init({
 <captcha theme="dark" required></captcha>
 <captcha text="Example" required></captcha>
 <captcha text="Example" theme="dark" required></captcha>
-<captcha label="Click here for a delicious 🍔" logo="https://twemoji.maxcdn.com/v/14.0.2/72x72/303d.png" text="I'm eatin' it" required></captcha>
+<captcha label="Click here for a delicious 🍔" logo="https://cdn.jsdelivr.net/gh/twitter/twemoji/assets/svg/303d.svg" text="I'm eatin' it" required></captcha>
 ```
 
 <captcha required></captcha>
 <captcha theme="dark" required></captcha>
 <captcha text="Example" required></captcha>
 <captcha text="Example" theme="dark" required></captcha>
-<captcha label="Click here for a delicious 🍔" logo="https://twemoji.maxcdn.com/v/14.0.2/72x72/303d.png" text="I'm eatin' it" required></captcha>
+<captcha label="Click here for a delicious 🍔" logo="https://cdn.jsdelivr.net/gh/twitter/twemoji/assets/svg/303d.svg" text="I'm eatin' it" required></captcha>
 ## Placeholder:
 
 ### Until you initialize the widget you can show a placeholder text
