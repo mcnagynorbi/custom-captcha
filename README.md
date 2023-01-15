@@ -1,22 +1,20 @@
 # Custom Captcha
 
 Extending Google reCaptcha v3 with a custom checkbox.
-
 This script creates a custom "skin" for the Google reCaptcha, using the v3 invisible captcha.
-
 You can make your own branded reCaptcha to make a unique experience.
 
 ## **⚠️ Warning**
 
-### This captcha is using reCaptcha v3 which is based on scoring instead of a visual challenge.
+### This captcha is using invisible reCaptcha v3 which is based on scoring instead of a visual challenge.
 
 ## Usage:
 
 ### Add this to the \<head>:
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/mcnagynorbi/custom-captcha/dist/custom_captcha.min.css"></link>
-<script src="https://cdn.jsdelivr.net/gh/mcnagynorbi/custom-captcha/dist/custom_captcha.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/custom-recaptcha/dist/custom_captcha.min.css"></link>
+<script src="https://cdn.jsdelivr.net/npm/custom-recaptcha/dist/custom_captcha.min.js"></script>
 ```
 
 ### Add this to your form(s):
@@ -33,15 +31,18 @@ CustomCaptcha.init("<your reCaptcha v3 siteKey>");
 
 ### Configuration:
 
-| parameter    |              description                 |   values                   |       default        |
-|--------------|------------------------------------------|----------------------------|----------------------|
+| parameter    | description                              | values                     | default              |
+| ------------ | ---------------------------------------- | -------------------------- | -------------------- |
+| logo         | the captcha brand logo                   | \<url>                     | favicon\*             |
 | name         | the name used in the form                | \<string>                  | g-recaptcha-response |
 | text         | the text displayed in the bottom right   | \<string>                  | reCAPTCHA            |
 | lang         | language of the "I'm not a robot"        | en, hu, de, sk, ro, hr, fr | browser default      |
 | label        | Custom text instead of "I'm not a robot" | \<string>                  | "I'm not a robot"    |
-| theme        | the color scheme of the widget           | light, dark | light        |                      |
-| required     | makes the field required (recommended)   |                            |                      |
-| logo-rounded | makes the logo rounded                   |                            |                      |
+| theme        | the color scheme of the widget           | light, dark                | light                |
+| required     | makes the field required (recommended)   |                            | not set              |
+| logo-rounded | makes the logo rounded                   |                            | not set              |
+
+\* By default the brand logo is the website favicon. If the website has no favicon or it is not available for some reason then it will fall back to the reCAPTCHA logo.
 
 ### Default configuration on initialization:
 
@@ -54,12 +55,12 @@ CustomCaptcha.init("<your reCaptcha v3 siteKey>");
 CustomCaptcha.init({
     siteKey: "<your reCaptcha v3 siteKey>",
     text: "Example",
-    logo: "https://twemoji.maxcdn.com/v/13.1.0/svg/1f916.svg",
+    logo: "https://cdn.jsdelivr.net/gh/twitter/twemoji/assets/svg/1f916.svg",
     theme: "dark"
 });
 ```
 
-![](/assets/config_example_global.png)
+![](./assets/config_example_global.png)
 
 ### Configuration on the element:
 
@@ -68,10 +69,10 @@ CustomCaptcha.init({
 <captcha theme="dark" required></captcha>
 <captcha text="Example" required></captcha>
 <captcha text="Example" theme="dark" required></captcha>
-<captcha label="Click here for a delicious 🍔" logo="https://twemoji.maxcdn.com/v/14.0.2/72x72/303d.png" text="I'm eatin' it" required></captcha>
+<captcha label="Click here for a delicious 🍔" logo="https://cdn.jsdelivr.net/gh/twitter/twemoji/assets/svg/303d.svg" text="I'm eatin' it" required></captcha>
 ```
 
-![](/assets/config_example_inline.png)
+![](./assets/config_example_inline.png)
 
 ## Placeholder:
 
@@ -88,11 +89,11 @@ CustomCaptcha.init({
 - Add your domain(s) under **Domains**
 - Click on **Submit**
 - Copy the **site key** and use it in **init**
-
+  
 ## **⚠️ Please note**
-
-### You need to process captcha score in your backend
-### Example code for validating response:
+  
+  ### You need to process captcha score in your backend
+  ### Example code for validating response:
 
 ```php
 function validate_captcha_response($code){
