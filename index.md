@@ -122,5 +122,5 @@ function validate_captcha_response($code){
 ```
 
 <script>
-    CustomCaptcha.init("6LdYwRUhAAAAAOPnPnui3qMlO3EGcBLsGduU6W55");
+    CustomCaptcha.init("6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI");
 </script>
