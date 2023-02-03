@@ -1,5 +1,10 @@
-<link rel="stylesheet" href="/dist/custom_captcha.min.css" />
-<script src="/dist/custom_captcha.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/custom-recaptcha/dist/custom_captcha.min.css"></link>
+<script src="https://cdn.jsdelivr.net/npm/custom-recaptcha/dist/custom_captcha.min.js"></script>
+<script>
+    if(window.location.host=="custom-captcha.js.org"){
+	    window.location.host = "https://custom-captcha.com";
+    }
+</script>
 
 # Custom Captcha
 
