@@ -1,8 +1,8 @@
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/custom-recaptcha/dist/custom_captcha.min.css"></link>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/custom-recaptcha/dist/custom_captcha.min.css" />
 <script src="https://cdn.jsdelivr.net/npm/custom-recaptcha/dist/custom_captcha.min.js"></script>
 <script>
     if(window.location.host=="custom-captcha.js.org"){
-	    window.location.host = "https://custom-captcha.com";
+	    window.location.href = "https://custom-captcha.com";
     }
 </script>
 
